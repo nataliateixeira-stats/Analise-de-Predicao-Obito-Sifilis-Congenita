@@ -5,7 +5,7 @@ library(janitor)
 
 # ====== Ler todos os DBC (2013–2023) ======
 
-dir_dbcs <- ""
+dir_dbcs <- "C:\\Users\\natal\\Github\\Analise-de-Predicao-Obito-Sifilis-Congenita\\dados\\dbc"
 
 arquivos <- sprintf("%sSIFCBR%02d.dbc", dir_dbcs, 13:23)
 existem <- file.exists(arquivos)
