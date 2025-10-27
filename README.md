@@ -1,19 +1,38 @@
 # Death-Prediction-Analysis-Congenital-Syphilis
 
-This repository contains a data science project on predicting deaths from congenital syphilis. Exploratory analysis and supervised machine learning techniques (Catboost, Random Forest, SVM, and XGBoost) were used. The project is part of an Artificial Intelligence course in the Graduate Program in Data Science in Health at USF.
+This repository presents a data science project focused on predicting deaths caused by congenital syphilis in Brazil. The study combines exploratory data analysis with supervised machine learning models — including CatBoost, Random Forest, Support Vector Machines (SVM), and XGBoost.
 
-To analyze the epidemiological profile of congenital syphilis in Brazil between 2013 and 2023, using data from DATASUS and applying machine learning methods to identify predictors of deaths, contributing to the formulation of strategies to prevent and reduce preventable deaths related to the infection.
+The project was developed as part of the Artificial Intelligence course in the Graduate Program in Data Science in Health at Universidade São Francisco (USF).
 
-The data used in this study were obtained from the Notifiable Diseases Information System (SINAN), made available by the Department of Information Technology of the Unified Health System (DATASUS), at http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinannet/cnv/sifilisbr.def.
+# Objective
 
-The data folder has a clean_data.csv file and another dbc folder with the dbc files by year of the SINAN system. The DBC files for the years 2013 to 2023 were downloaded, named SIFCBR13.dbc to SIFCBR23.dbc. 
+The primary goal of this project is to analyze the epidemiological profile of congenital syphilis in Brazil between 2013 and 2023, using official data from DATASUS, and to apply machine learning techniques to identify the most relevant predictors of death.
+The findings aim to support public health decision-making and contribute to the prevention and reduction of avoidable deaths related to congenital syphilis.
 
-The documentation folder has SINAN data from DATASUS in Portuguese, as it is from the Brazilian government.
+# Data Source
 
-The scripts directory contains two subfolders. The first includes one R script, Script_read_dbcs.R, which reads the DBC files and merges them in the R environment, producing a single consolidated file named clean_data.csv, with 251,659 observations and 64 variables. The second subfolder contains two Python notebooks: 1. Descriptive Analysis.ipynb, which performs a descriptive analysis of congenital syphilis case counts and mortality rates by year, and 2. ML Models.ipynb, which handles data cleaning, training and testing sample selection, and the application of machine learning models.
+The data used in this study were obtained from the Notifiable Diseases Information System (SINAN), provided by the Department of Information Technology of the Unified Health System (DATASUS).
+Data are publicly available at:
+http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinannet/cnv/sifilisbr.def
 
+# Repository Structure
 
+data/
 
+clean_data.csv — consolidated dataset containing 251,659 observations and 64 variables.
 
+dbc/ — original SINAN data files in DBC format, organized by year (SIFCBR13.dbc to SIFCBR23.dbc, corresponding to 2013–2023).
 
+documentation/
 
+Contains SINAN documentation from DATASUS (in Portuguese), as provided by the Brazilian government.
+
+scripts/r/
+
+Script_read_dbcs.R — reads and merges all yearly DBC files in the R environment, producing the cleaned dataset clean_data.csv.
+
+scripts/python/
+
+1. Descriptive Analysis.ipynb — performs exploratory and descriptive analysis of congenital syphilis cases and mortality rates by year.
+
+2. ML Models.ipynb — conducts data preprocessing, training/testing split, and applies supervised machine learning models for death prediction.
