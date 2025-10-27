@@ -13,7 +13,7 @@ Analisar o perfil epidemiológico da sífilis congênita no Brasil entre 2013 e 
 
 # Materiais e Métodos
 
-1 - Aquisição Dataset
+#  1 - Aquisição Dataset
 
 Os dados utilizados neste estudo foram obtidos a partir do Sistema de Informação de Agravos de Notificação (SINAN), disponibilizado pelo Departamento de Informática do Sistema Único de Saúde (DATASUS), por meio do endereço eletrônico http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinannet/cnv/sifilisbr.def.
 
@@ -41,7 +41,7 @@ O conjunto de dados reúne informações sobre casos notificados de sífilis con
 
 # Resultados e Discussão
 
-1 - Análise Descritiva
+# 1 - Análise Descritiva
 
 Quantidade de casos e óbitos no Brasil
 
@@ -60,9 +60,9 @@ Quantidade de casos e óbitos no Brasil
    2022  26512     345        13.01
    2023  25310     312        12.33
 
-2 - Modelos de Machine Learning
+# 2 - Modelos de Machine Learning
 
-2.1 - Limpeza dos dados
+# 2.1 - Limpeza dos dados
 
 Para rodar os modelos de machine learning, temos as seguintes etapas de limpeza, que deixa somente as variáveis que se relacionam com o desfecho e fazem sentido para o estudo.
 
@@ -80,35 +80,35 @@ Etapa 4: Remover as colunas que não fazem sentido de serem consideradas
 Etapa 5: Remover as variáveis de localização geográfica do pré-natal
 
 
-2.2 Balanceamento de dados
+# 2.2 Balanceamento de dados
 
 Foi utilizada a técnica de Undersampling para seleção das amostras por conta de termos o óbito por sífilis congênita como um evento raro.
 
 
-2.3 Divisão dos dados em Treino e teste
+# 2.3 Divisão dos dados em Treino e teste
 
-2.3.1 Geral - 70% treino e 30% teste
+# 2.3.1 Geral - 70% treino e 30% teste
 
-2.3.2 Longitudinal - 2013-2021 treino e 2022-2023 teste
-
-
-
-
-2.4 Modelos de Machine Learning
-
-
-
-2.3.1 Catboost
-
-2.3.2 Random Forest
-
-2.3.3 Support Vector Machine (SVM)
-
-2.3.4 XGboost
+# 2.3.2 Longitudinal - 2013-2021 treino e 2022-2023 teste
 
 
 
 
-2.5 Avaliação de métricas
+# 2.4 Modelos de Machine Learning
+
+
+
+# 2.4.1 Catboost
+
+# 2.4.2 Random Forest
+
+# 2.4.3 Support Vector Machine (SVM)
+
+# 2.4.4 XGboost
+
+
+
+
+# 2.5 Avaliação de métricas
 
 
