@@ -5,7 +5,7 @@ library(janitor)
 
 # ====== Ler todos os DBC (2013–2023) ====== 
 # mude para o seu caminho com os dbc's:
-dir_dbcs <- "C:\\Users\\natal\\Github\\Analise-de-Predicao-Obito-Sifilis-Congenita\\dados\\dbc"
+dir_dbcs <- "C:\\Users\\natal\\Github\\Analise-de-Predicao-Obito-Sifilis-Congenita\\data\\dbc"
 
 arquivos <- sprintf("%sSIFCBR%02d.dbc", dir_dbcs, 13:23)
 existem <- file.exists(arquivos)
@@ -30,7 +30,7 @@ raw <- bind_rows(lista) %>% mutate(nu_ano = as.integer(substr(nu_ano, 1, 4)))
 
 str(raw)
 
-write.csv(raw,"dados_limpos.csv")
+write.csv(raw,"clean_data.csv")
 
 
 
