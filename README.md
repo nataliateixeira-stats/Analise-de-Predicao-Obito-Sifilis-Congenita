@@ -19,20 +19,26 @@ http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinannet/cnv/sifilisbr.def
 
 data/
 
-clean_data.csv — consolidated dataset containing 251,659 observations and 64 variables.
+    clean_data.csv — consolidated dataset containing 251,659 observations and 64 variables.
 
-dbc/ — original SINAN data files in DBC format, organized by year (SIFCBR13.dbc to SIFCBR23.dbc, corresponding to 2013–2023).
+dbc/
+
+    Contains original SINAN data files in DBC format, organized by year
+    (SIFCBR13.dbc to SIFCBR23.dbc, corresponding to 2013–2023).
 
 documentation/
-
-Contains SINAN documentation from DATASUS (in Portuguese), as provided by the Brazilian government.
+    Contains SINAN documentation from DATASUS (in Portuguese), as provided by the Brazilian government.
 
 scripts/r/
 
-Script_read_dbcs.R — reads and merges all yearly DBC files in the R environment, producing the cleaned dataset clean_data.csv.
+    Script_read_dbcs.R — reads and merges all yearly DBC files in the R environment, producing the cleaned dataset clean_data.csv.
 
 scripts/python/
 
-1. Descriptive Analysis.ipynb — performs exploratory and descriptive analysis of congenital syphilis cases and mortality rates by year.
+    1. Descriptive Analysis.ipynb — performs exploratory and descriptive analysis of congenital syphilis cases and mortality rates by year.
 
-2. ML Models.ipynb — conducts data preprocessing, training/testing split, and applies supervised machine learning models for death prediction.
+    2. ML Models.ipynb — conducts data preprocessing, training/testing split, and applies supervised machine learning models for death prediction.
+
+
+Open the requirements.txt file to check the requirements for the versions of the packages used
+
