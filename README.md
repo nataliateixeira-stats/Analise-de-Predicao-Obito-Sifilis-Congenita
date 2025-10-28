@@ -27,11 +27,12 @@ dbc/
     (SIFCBR13.dbc to SIFCBR23.dbc, corresponding to 2013–2023).
 
 documentation/
+
     Contains SINAN documentation from DATASUS (in Portuguese), as provided by the Brazilian government.
 
 scripts/r/
 
-    Script_read_dbcs.R — reads and merges all yearly DBC files in the R environment, producing the cleaned dataset clean_data.csv.
+    0. Script_read_dbcs.R — reads and merges all yearly DBC files in the R environment, producing the cleaned dataset clean_data.csv.
 
 scripts/python/
 
